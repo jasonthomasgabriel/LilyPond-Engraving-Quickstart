@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% book.ly
-%%%% version: 3.1
+%%%% version: 3.1.1
 %%%% Author: Jason Thomas Gabriel
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,7 +9,7 @@
  % Start date  :                                                %
  % Last edit   :                                                %
  % ------------------------------------------------------------ %
- % Description :                                                %
+ % License     :                                                %
  %                                                              %
  %                                                              %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,14 +28,15 @@
   
   % Staff size needs to be set, before changing the font
   % Standard staff size = 20, explicitly stated for "house font"-scaling. See table with recommendations for various sizes: http://lilypond.org/doc/v2.19/Documentation/notation/setting-the-staff-size
-    #(set-global-staff-size 20)
+  % That said, size 15 is a nice starting point
+    #(set-global-staff-size 15)
 
   \include "_engraving_standards/_paper/_house_fonts/_sourceprofamily.ily"
   \include "_engraving_standards/_layout/_notation_rules.ily"
 
-  % Choose required indentation
-    \include "_engraving_standards/_layout/_indentation_one_part.ily"
-    % \include "_engraving_standards/_layout/_indentation_multipart.ily"
+  % Choose required indentation for displaying or not displaying instrument names on the left of the Staff.
+    \include "_engraving_standards/_layout/_indentation_no_instrument_names.ily"
+    % \include "_engraving_standards/_layout/_indentation_with_instrument_names.ily"
 
 % Include all Bookpart_[n]_/_includes-files here, as no variables can be defined inside a book block :(.
   \include "Bookpart_1/_includes/_functions_variables_bookpart_1.ily"
@@ -48,4 +49,7 @@
   % Include all bookparts here
     \include "Bookpart_1/coverpage_bookpart_1.ily" % If a bookpart is empty, LilyPond ignores it. So, it can be left uncommented.
     \include "Bookpart_1/bookpart_1.ily"
+    
+    % Uncomment below if you wish to ALSO print the individual parts when using the instrument library
+      % \include "bookpart_1/instrument_library_bookparts/bundle_parts_bookpart_1.ily"
 }
