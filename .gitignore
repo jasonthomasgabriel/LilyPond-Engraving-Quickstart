@@ -43,3 +43,7 @@ Temporary Items
 
 # Filter out Visual Studio Code intermediary files
 *.tmp
+
+# Filter out automatically generated preview files
+*.pdf
+*.midi
