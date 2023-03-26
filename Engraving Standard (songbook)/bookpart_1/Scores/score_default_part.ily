@@ -1,5 +1,5 @@
 %%%% ENGRAVING STANDARD SONGBOOK
-%%%% Bookpart_1/Scores/full_score.ily
+%%%% Bookpart_1/Scores/score_default_part.ily
 %%%% version: 3.1
 %%%% Author: Jason Thomas Gabriel
 
