@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% bookpart_1/instrument_library_bookparts/brass/trombone_bookpart_1.ily
-%%%% version: 3.1
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -11,7 +11,6 @@
     \include "../../_includes/_headers_bookpart_1.ily"
 
     instrument = "Trombone" % "Part" would be an apt name, as this could easily say "full score". I could change it, but the whole point is to leave as much Lilypond's standards as possible.
-
   }
   
   % Optionally set staff size in \layout{}, depending on needs when dealing with multiple scores.

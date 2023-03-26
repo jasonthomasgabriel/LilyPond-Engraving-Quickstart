@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% bookpart_1/instrument_library_bookparts/brass/horn_bookpart_1.ily
-%%%% version: 3.1
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
