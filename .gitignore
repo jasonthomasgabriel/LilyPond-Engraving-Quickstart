@@ -41,7 +41,7 @@ Temporary Items
 *.ly~
 *.ily~
 
-# Filter out Visual Studio Code intermediary files
+# Filter out LilyPond intermediary files
 *.tmp
 
 # Filter out automatically generated preview files
