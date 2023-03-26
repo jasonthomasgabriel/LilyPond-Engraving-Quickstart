@@ -1,4 +1,4 @@
-MIT License
+# MIT License
 
 Copyright (c) 2023 Jason Thomas Gabriel Everts
 
@@ -20,7 +20,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-===
+--------------------------------------------------------------------------------
+
+# Fonts
 
 The fonts used in this repository are licensed under the SIL Open Font License, Version 1.1. See: https://github.com/adobe-fonts.
 
