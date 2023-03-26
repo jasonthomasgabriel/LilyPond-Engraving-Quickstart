@@ -1,0 +1,1 @@
+An explanation of where/how to install these fonts in LilyPond
