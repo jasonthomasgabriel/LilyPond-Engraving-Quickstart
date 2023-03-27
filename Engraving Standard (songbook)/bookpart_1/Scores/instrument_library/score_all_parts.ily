@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% Bookpart_1/Scores/instrument_library/score_all_parts.ily
-%%%% version: 3.1
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -46,5 +46,18 @@ scoring_bookpart_one = {
       \part_violoncello_bookpart_one
       \part_contrabass_bookpart_one
     >>
+
+    % user instruments
+    % Place these where appropriate for your score 
+    % \part_user_instrument_one_part_bookpart_one
+    % \part_user_instrument_two_part_bookpart_one
+    % \part_user_instrument_three_part_bookpart_one
+    % \part_user_instrument_four_part_bookpart_one
+    % \part_user_instrument_five_part_bookpart_one
+    % \part_user_instrument_six_part_bookpart_one
+    % \part_user_instrument_seven_part_bookpart_one
+    % \part_user_instrument_eight_part_bookpart_one
+    % \part_user_instrument_nine_part_bookpart_one
+    % \part_user_instrument_ten_part_bookpart_one
   >>
 }

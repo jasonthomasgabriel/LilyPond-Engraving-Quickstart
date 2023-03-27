@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% bookpart_1/Scores/instrument_library/bundle_scores_all_parts.ily
-%%%% version: 3.1
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -38,3 +38,15 @@
 \include "strings/score_viola.ily"
 \include "strings/score_violoncello.ily"
 \include "strings/score_contrabass.ily"
+
+% user instruments
+\include "_user_instruments/score_user_instrument_1.ily"
+\include "_user_instruments/score_user_instrument_2.ily"
+\include "_user_instruments/score_user_instrument_3.ily"
+\include "_user_instruments/score_user_instrument_4.ily"
+\include "_user_instruments/score_user_instrument_5.ily"
+\include "_user_instruments/score_user_instrument_6.ily"
+\include "_user_instruments/score_user_instrument_7.ily"
+\include "_user_instruments/score_user_instrument_8.ily"
+\include "_user_instruments/score_user_instrument_9.ily"
+\include "_user_instruments/score_user_instrument_10.ily"
