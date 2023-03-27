@@ -13,11 +13,11 @@ notes_bassdrum_bookpart_one = \drummode {
 part_bassdrum_bookpart_one = \new DrumStaff \with {
   instrumentName = "Bass Drum"
   shortInstrumentName = "B.D."
-  midiInstrument = "orchestral kit"
+  midiInstrument = "orchestra kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \global_bookpart_one \notes_bassdrum_bookpart_one >> }
 
 part_bassdrum_part_bookpart_one = \new DrumStaff \with {
-  midiInstrument = "orchestral kit"
+  midiInstrument = "orchestra kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \tempomarkings_bookpart_one \global_bookpart_one \notes_bassdrum_bookpart_one >> }
