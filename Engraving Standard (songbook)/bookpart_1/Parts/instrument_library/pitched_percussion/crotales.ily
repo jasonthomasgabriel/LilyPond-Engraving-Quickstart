@@ -15,8 +15,8 @@ part_crotales_bookpart_one = \new Staff \with {
   instrumentName = "Crotales"
   shortInstrumentName = "Crot."
   midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_crotales_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_crotales_bookpart_one >> }
 
 part_crotales_part_bookpart_one = \new Staff \with {
   midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_crotales_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_crotales_bookpart_one >> }

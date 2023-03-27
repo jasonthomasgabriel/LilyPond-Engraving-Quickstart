@@ -14,8 +14,8 @@ part_violin_II_bookpart_one = \new Staff \with {
   instrumentName = "Violin II"
   shortInstrumentName = "Vl. II"
   midiInstrument = "string ensemble 1" %saving midi channels for preview purposes
-} { \clef treble << \global_bookpart_one \notes_violin_II_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_violin_II_bookpart_one >> }
 
 part_violin_II_part_bookpart_one = \new Staff \with {
   midiInstrument = "string ensemble 1" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_violin_II_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_violin_II_bookpart_one >> }

@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% Bookpart_1/Parts/part.ily
-%%%% version: 3.2
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -14,4 +14,4 @@ part_default_part_bookpart_one = \new Staff \with {
   %instrumentName = ""
   %shortInstrumentName = ""
   %midiInstrument = ""
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_default_part_bookpart_one >> }
+} { \clef treble << \global_bookpart_one \notes_default_part_bookpart_one >> }

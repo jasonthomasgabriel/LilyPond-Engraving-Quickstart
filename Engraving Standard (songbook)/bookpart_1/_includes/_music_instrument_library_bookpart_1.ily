@@ -7,7 +7,6 @@
 
 % Propriatary includes
 \include "../Parts/_global.ily"
-\include "../Parts/_tempomarkings.ily"
 
 % Include all parts here
 \include "../Parts/instrument_library/woodwinds/piccolo.ily"

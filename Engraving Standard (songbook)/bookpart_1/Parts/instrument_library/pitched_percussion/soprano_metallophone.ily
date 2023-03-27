@@ -15,8 +15,8 @@ part_soprano_metallophone_bookpart_one = \new Staff \with {
   instrumentName = "Sop. Metallophone"
   shortInstrumentName = "Sop. Met."
   midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-} { \clef treble << \global_bookpart_one \notes_soprano_metallophone_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_soprano_metallophone_bookpart_one >> }
 
 part_soprano_metallophone_part_bookpart_one = \new Staff \with {
   midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_soprano_metallophone_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_soprano_metallophone_bookpart_one >> }

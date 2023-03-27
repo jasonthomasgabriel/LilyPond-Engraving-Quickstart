@@ -15,8 +15,8 @@ part_glockenspiel_bookpart_one = \new Staff \with {
   instrumentName = "Glockenspiel"
   shortInstrumentName = "Gls."
   midiInstrument = "glockenspiel"
-} { \clef treble << \global_bookpart_one \notes_glockenspiel_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_glockenspiel_bookpart_one >> }
 
 part_glockenspiel_part_bookpart_one = \new Staff \with {
   midiInstrument = "glockenspiel"
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_glockenspiel_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_glockenspiel_bookpart_one >> }

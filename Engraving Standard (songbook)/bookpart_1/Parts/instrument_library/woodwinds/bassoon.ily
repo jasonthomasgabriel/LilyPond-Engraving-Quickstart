@@ -14,8 +14,8 @@ part_bassoon_bookpart_one = \new Staff \with {
   instrumentName = "Bassoon"
   shortInstrumentName = "Bn."
   midiInstrument = "bassoon"
-} { \clef bass << \global_bookpart_one \notes_bassoon_bookpart_one >> }
+} { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_bassoon_bookpart_one >> }
 
 part_bassoon_part_bookpart_one = \new Staff \with {
   midiInstrument = "bassoon"
-} { \clef bass << \tempomarkings_bookpart_one \global_bookpart_one \notes_bassoon_bookpart_one >> }
+} { \clef bass << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_bassoon_bookpart_one >> }

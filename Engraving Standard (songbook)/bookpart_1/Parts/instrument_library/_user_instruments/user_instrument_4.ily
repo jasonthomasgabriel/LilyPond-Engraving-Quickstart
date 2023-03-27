@@ -14,8 +14,8 @@ part_user_instrument_four_bookpart_one = \new Staff \with {
   % instrumentName = ""
   % shortInstrumentName = ""
   % midiInstrument = ""
-} { \clef treble << \global_bookpart_one \notes_trombone_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_user_instrument_four_bookpart_one >> }
 
 part_user_instrument_four_part_bookpart_one = \new Staff \with {
   % midiInstrument = ""
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_trombone_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_user_instrument_four_bookpart_one >> }

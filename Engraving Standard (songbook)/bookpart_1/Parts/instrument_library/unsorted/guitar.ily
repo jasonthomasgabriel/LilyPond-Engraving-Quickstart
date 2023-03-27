@@ -14,8 +14,8 @@ part_guitar_bookpart_one = \new Staff \with {
   instrumentName = "Classical Guitar"
   shortInstrumentName = "Gt."
   midiInstrument = "acoustic guitar (nylon)"
-} { \clef "treble_8" << \global_bookpart_one \notes_guitar_bookpart_one >> }
+} { \clef "treble_8" << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_guitar_bookpart_one >> }
 
 part_guitar_part_bookpart_one = \new Staff \with {
   midiInstrument = "acoustic guitar (nylon)"
-} { \clef "treble_8" << \tempomarkings_bookpart_one \global_bookpart_one \notes_guitar_bookpart_one >> }
+} { \clef "treble_8" << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_guitar_bookpart_one >> }

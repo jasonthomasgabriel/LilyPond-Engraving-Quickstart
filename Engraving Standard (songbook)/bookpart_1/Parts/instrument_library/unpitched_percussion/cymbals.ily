@@ -15,9 +15,9 @@ part_cymbals_bookpart_one = \new DrumStaff \with {
   shortInstrumentName = "Cym."
   midiInstrument = "standard kit"
   drumStyleTable = #percussion-style
-} { \override Staff.StaffSymbol.line-count = #1 << \global_bookpart_one \notes_cymbals_bookpart_one >> }
+} { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_cymbals_bookpart_one >> }
 
 part_cymbals_part_bookpart_one = \new DrumStaff \with {
   midiInstrument = "standard kit"
   drumStyleTable = #percussion-style
-} { \override Staff.StaffSymbol.line-count = #1 << \tempomarkings_bookpart_one \global_bookpart_one \notes_cymbals_bookpart_one >> }
+} { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_cymbals_bookpart_one >> }

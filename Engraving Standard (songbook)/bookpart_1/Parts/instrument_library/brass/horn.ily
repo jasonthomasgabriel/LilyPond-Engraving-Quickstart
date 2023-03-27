@@ -14,8 +14,8 @@ part_horn_bookpart_one = \new Staff \with {
   instrumentName = "Horn in F"
   shortInstrumentName = "Hn.F."
   midiInstrument = "french horn"
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_horn_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_horn_bookpart_one >> }
 
 part_horn_part_bookpart_one = \new Staff \with {
   midiInstrument = "french horn"
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_horn_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_horn_bookpart_one >> }
