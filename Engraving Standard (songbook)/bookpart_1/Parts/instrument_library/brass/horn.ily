@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% Bookpart_1/Parts/instrument_library/brass/horn.ily
-%%%% version: 3.2
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -16,6 +16,6 @@ part_horn_bookpart_one = \new Staff \with {
   midiInstrument = "french horn"
 } { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_horn_bookpart_one >> }
 
-part_horn_part_bookpart_one = \new Staff { 
-  \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_horn_bookpart_one >> 
-}
+part_horn_part_bookpart_one = \new Staff \with {
+  midiInstrument = "french horn"
+} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_horn_bookpart_one >> }

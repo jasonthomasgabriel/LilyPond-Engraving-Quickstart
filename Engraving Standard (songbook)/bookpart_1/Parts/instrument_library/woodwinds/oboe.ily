@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% Bookpart_1/Parts/woodwinds/oboe.ily
-%%%% version: 3.2
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -16,6 +16,6 @@ part_oboe_bookpart_one = \new Staff \with {
   midiInstrument = "oboe"
 } { \clef treble << \global_bookpart_one \notes_oboe_bookpart_one >> }
 
-part_oboe_part_bookpart_one = \new Staff { 
-  \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_oboe_bookpart_one >> 
-}
+part_oboe_part_bookpart_one = \new Staff \with {
+  midiInstrument = "oboe"
+} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_oboe_bookpart_one >> }

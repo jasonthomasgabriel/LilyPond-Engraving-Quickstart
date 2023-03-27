@@ -1,6 +1,6 @@
 %%%% ENGRAVING STANDARD SONGBOOK
 %%%% Bookpart_1/Parts/unsorted/piano.ily
-%%%% version: 3.2
+%%%% version: 3.1.2
 %%%% Author: Jason Thomas Gabriel
 
 \version "2.24.1"
@@ -29,12 +29,12 @@ part_piano_bookpart_one = \new PianoStaff \with {
 }
 
 part_piano_part_bookpart_one = \new PianoStaff {
-    <<
-      \new Staff = "staff_piano_upper_bookpart_one" { 
-        \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_piano_upper_bookpart_one >> 
-      } 
-      \new Staff = "staff_piano_lower_bookpart_one" { 
-        \clef bass << \global_bookpart_one \notes_piano_lower_bookpart_one >> 
-      }
-    >>
+  <<
+    \new Staff = "staff_piano_upper_bookpart_one" \with {
+      midiInstrument = "acoustic grand"
+    } { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_piano_upper_bookpart_one >> } 
+    \new Staff = "staff_piano_lower_bookpart_one" \with {
+      midiInstrument = "acoustic grand"
+    } { \clef bass << \global_bookpart_one \notes_piano_lower_bookpart_one >> }
+  >>
 }
