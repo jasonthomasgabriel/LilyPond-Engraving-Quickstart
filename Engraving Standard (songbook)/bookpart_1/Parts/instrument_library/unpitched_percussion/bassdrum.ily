@@ -7,17 +7,17 @@
 \language "english"
 
 notes_bassdrum_bookpart_one = \drummode {
-  hc
+  bd
 }
 
 part_bassdrum_bookpart_one = \new DrumStaff \with {
   instrumentName = "Bass Drum"
   shortInstrumentName = "B.D."
-  midiInstrument = "woodblock" %saving midi channels for preview purposes
+  midiInstrument = "orchestral kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \global_bookpart_one \notes_bassdrum_bookpart_one >> }
 
 part_bassdrum_part_bookpart_one = \new DrumStaff \with {
-  midiInstrument = "woodblock" %saving midi channels for preview purposes
+  midiInstrument = "orchestral kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \tempomarkings_bookpart_one \global_bookpart_one \notes_bassdrum_bookpart_one >> }

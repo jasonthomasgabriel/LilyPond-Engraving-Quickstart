@@ -7,17 +7,17 @@
 \language "english"
 
 notes_cymbals_bookpart_one = \drummode {
-  hc
+  cymc
 }
 
 part_cymbals_bookpart_one = \new DrumStaff \with {
   instrumentName = "Cymbals"
   shortInstrumentName = "Cym."
-  midiInstrument = "" % have to look into this still
+  midiInstrument = "standard kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \global_bookpart_one \notes_cymbals_bookpart_one >> }
 
 part_cymbals_part_bookpart_one = \new DrumStaff \with {
-  midiInstrument = "" % have to look into this still
+  midiInstrument = "standard kit"
   drumStyleTable = #percussion-style
 } { \override Staff.StaffSymbol.line-count = #1 << \tempomarkings_bookpart_one \global_bookpart_one \notes_cymbals_bookpart_one >> }
