@@ -14,8 +14,8 @@ part_trumpet_bookpart_one = \new Staff \with {
   instrumentName = \markup \concat { "Trumpet in B" \super \flat }
   shortInstrumentName = \markup \concat { "Tr.B" \super { \flat } "." }
   midiInstrument = "trumpet"
-} { \clef treble << \global_bookpart_one \notes_trumpet_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_trumpet_bookpart_one >> }
 
 part_trumpet_part_bookpart_one = \new Staff \with {
   midiInstrument = "trumpet"
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_trumpet_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_trumpet_bookpart_one >> }

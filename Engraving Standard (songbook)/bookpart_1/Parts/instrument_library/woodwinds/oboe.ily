@@ -14,8 +14,8 @@ part_oboe_bookpart_one = \new Staff \with {
   instrumentName = "Oboe"
   shortInstrumentName = "Ob."
   midiInstrument = "oboe"
-} { \clef treble << \global_bookpart_one \notes_oboe_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_oboe_bookpart_one >> }
 
 part_oboe_part_bookpart_one = \new Staff \with {
   midiInstrument = "oboe"
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_oboe_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_oboe_bookpart_one >> }

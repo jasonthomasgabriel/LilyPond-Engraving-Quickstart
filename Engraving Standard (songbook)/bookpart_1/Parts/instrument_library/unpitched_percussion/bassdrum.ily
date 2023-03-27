@@ -15,9 +15,9 @@ part_bassdrum_bookpart_one = \new DrumStaff \with {
   shortInstrumentName = "B.D."
   midiInstrument = "orchestra kit"
   drumStyleTable = #percussion-style
-} { \override Staff.StaffSymbol.line-count = #1 << \global_bookpart_one \notes_bassdrum_bookpart_one >> }
+} { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_bassdrum_bookpart_one >> }
 
 part_bassdrum_part_bookpart_one = \new DrumStaff \with {
   midiInstrument = "orchestra kit"
   drumStyleTable = #percussion-style
-} { \override Staff.StaffSymbol.line-count = #1 << \tempomarkings_bookpart_one \global_bookpart_one \notes_bassdrum_bookpart_one >> }
+} { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_bassdrum_bookpart_one >> }

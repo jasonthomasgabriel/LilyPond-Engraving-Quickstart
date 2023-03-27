@@ -14,8 +14,8 @@ part_trombone_bookpart_one = \new Staff \with {
   instrumentName = "Trombone"
   shortInstrumentName = "Trb."
   midiInstrument = "trombone"
-} { \clef bass << \global_bookpart_one \notes_trombone_bookpart_one >> }
+} { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_trombone_bookpart_one >> }
 
 part_trombone_part_bookpart_one = \new Staff \with {
   midiInstrument = "trombone"
-} { \clef bass << \tempomarkings_bookpart_one \global_bookpart_one \notes_trombone_bookpart_one >> }
+} { \clef bass << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_trombone_bookpart_one >> }

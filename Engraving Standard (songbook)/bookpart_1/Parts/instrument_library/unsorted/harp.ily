@@ -21,10 +21,10 @@ part_harp_bookpart_one = \new PianoStaff \with {
     <<
       \new Staff = "staff_harp_upper_bookpart_one" \with {
         midiInstrument = "orchestral harp"
-      } { \clef treble << \global_bookpart_one \notes_harp_upper_bookpart_one >> } 
+      } { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_harp_upper_bookpart_one >> } 
       \new Staff = "staff_harp_lower_bookpart_one" \with {
         midiInstrument = "orchestral harp"
-      } { \clef bass << \global_bookpart_one \notes_harp_lower_bookpart_one >> }
+      } { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_harp_lower_bookpart_one >> }
     >>
 }
 
@@ -32,9 +32,9 @@ part_harp_part_bookpart_one = \new PianoStaff {
   <<
     \new Staff = "staff_harp_upper_bookpart_one" \with {
       midiInstrument = "orchestral harp"
-    } { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_harp_upper_bookpart_one >> } 
+    } { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_harp_upper_bookpart_one >> } 
     \new Staff = "staff_harp_lower_bookpart_one" \with {
       midiInstrument = "orchestral harp"
-    } { \clef bass << \global_bookpart_one \notes_harp_lower_bookpart_one >> }
+    } { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_harp_lower_bookpart_one >> }
   >>
 }

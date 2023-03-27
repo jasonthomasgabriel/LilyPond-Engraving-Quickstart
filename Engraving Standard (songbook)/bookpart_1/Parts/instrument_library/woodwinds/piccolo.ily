@@ -15,8 +15,8 @@ part_piccolo_bookpart_one = \new Staff \with {
   instrumentName = "Piccolo"
   shortInstrumentName = "Pic."
   midiInstrument = "flute" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_piccolo_bookpart_one >> }
+} { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_piccolo_bookpart_one >> }
 
 part_piccolo_part_bookpart_one = \new Staff \with {
   midiInstrument = "flute" %saving midi channels for preview purposes
-} { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_piccolo_bookpart_one >> }
+} { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_piccolo_bookpart_one >> }

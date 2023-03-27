@@ -21,10 +21,10 @@ part_piano_bookpart_one = \new PianoStaff \with {
     <<
       \new Staff = "staff_piano_upper_bookpart_one" \with {
         midiInstrument = "acoustic grand"
-      } { \clef treble << \global_bookpart_one \notes_piano_upper_bookpart_one >> } 
+      } { \clef treble << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_piano_upper_bookpart_one >> } 
       \new Staff = "staff_piano_lower_bookpart_one" \with {
         midiInstrument = "acoustic grand"
-      } { \clef bass << \global_bookpart_one \notes_piano_lower_bookpart_one >> }
+      } { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_piano_lower_bookpart_one >> }
     >>
 }
 
@@ -32,9 +32,9 @@ part_piano_part_bookpart_one = \new PianoStaff {
   <<
     \new Staff = "staff_piano_upper_bookpart_one" \with {
       midiInstrument = "acoustic grand"
-    } { \clef treble << \tempomarkings_bookpart_one \global_bookpart_one \notes_piano_upper_bookpart_one >> } 
+    } { \clef treble << \removeWithTag #'score \global_bookpart_one \removeWithTag #'score \notes_piano_upper_bookpart_one >> } 
     \new Staff = "staff_piano_lower_bookpart_one" \with {
       midiInstrument = "acoustic grand"
-    } { \clef bass << \global_bookpart_one \notes_piano_lower_bookpart_one >> }
+    } { \clef bass << \removeWithTag #'part \global_bookpart_one \removeWithTag #'part \notes_piano_lower_bookpart_one >> }
   >>
 }
