@@ -1,3 +1,4 @@
 - [ ] (Prepare) multiple parts support for woodwinds and brass (with \partcombine)
 - [X] Rewrite scoring to use tags, to make \tempomarkings(...) obsolete
 - [ ] Big overhaul to adjust nomenclature and files/folders to the new use of \book rather than \bookpart
+- [ ] Make the individual part prints be their own \book, so they can be sized to wish
