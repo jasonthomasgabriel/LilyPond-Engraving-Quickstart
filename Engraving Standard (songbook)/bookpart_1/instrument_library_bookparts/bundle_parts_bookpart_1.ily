@@ -38,3 +38,15 @@
 \include "strings/viola_bookpart_1.ily"
 \include "strings/violoncello_bookpart_1.ily"
 \include "strings/contrabass_bookpart_1.ily"
+
+% user instruments
+% \include "_user_instruments/user_instrument_1_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_2_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_3_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_4_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_5_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_6_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_7_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_8_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_9_bookpart_1.ily"
+% \include "_user_instruments/user_instrument_10_bookpart_1.ily"
