@@ -7,3 +7,5 @@ In random order
 - [ ] Make the individual part prints be their own \book, so they can be sized to wish
     - [ ] And give them a more helpful filename with \bookOutputSuffix
 - [ ] Add more frequently used instruments to the instrument library (and voices)
+
+- [ ] WRITE A MANUAL!!!!!
