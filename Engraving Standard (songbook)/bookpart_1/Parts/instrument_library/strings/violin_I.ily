@@ -7,7 +7,7 @@
 \language "english"
 
 notes_violin_I_bookpart_one = \relative c' {
-  c
+  \no_music % remove when inputting notes
 }
 
 part_violin_I_bookpart_one = \new Staff \with {

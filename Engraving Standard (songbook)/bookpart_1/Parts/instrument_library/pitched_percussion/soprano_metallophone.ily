@@ -8,7 +8,7 @@
 
 notes_soprano_metallophone_bookpart_one = \relative c' {
   \transposition c''
-  c
+  \no_music % remove when inputting notes
 }
 
 part_soprano_metallophone_bookpart_one = \new Staff \with {

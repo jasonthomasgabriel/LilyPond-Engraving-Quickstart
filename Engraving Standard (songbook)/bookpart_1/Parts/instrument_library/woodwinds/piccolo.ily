@@ -8,7 +8,7 @@
 
 notes_piccolo_bookpart_one = \relative c' {
   \transposition c''
-  c
+  \no_music % remove when inputting notes
 }
 
 part_piccolo_bookpart_one = \new Staff \with {
