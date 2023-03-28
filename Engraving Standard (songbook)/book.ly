@@ -16,8 +16,11 @@
 
 \version "2.24.1"
 
-#(ly:set-option 'relative-includes #t)
+% Scores cannot be empty, this variable is a spacer for all unused parts.
+% For quick testing of your setup, you could replace the spacer with some music in curly brackets.
+no_music = \skip 4
 
+#(ly:set-option 'relative-includes #t)
 \include "articulate.ly"
 
 % Propriatary includes

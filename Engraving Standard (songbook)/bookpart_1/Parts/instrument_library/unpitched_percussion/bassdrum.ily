@@ -7,7 +7,8 @@
 \language "english"
 
 notes_bassdrum_bookpart_one = \drummode {
-  bd
+  \no_music % remove when inputting notes
+  % bd
 }
 
 part_bassdrum_bookpart_one = \new DrumStaff \with {

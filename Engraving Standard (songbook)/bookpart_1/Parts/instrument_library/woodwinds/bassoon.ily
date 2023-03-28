@@ -7,7 +7,7 @@
 \language "english"
 
 notes_bassoon_bookpart_one = \relative c' {
-  c
+  \no_music % remove when inputting notes
 }
 
 part_bassoon_bookpart_one = \new Staff \with {

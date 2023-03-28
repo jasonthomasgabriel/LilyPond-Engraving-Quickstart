@@ -7,11 +7,11 @@
 \language "english"
 
 notes_piano_upper_bookpart_one = \relative c' {
-  c
+  \no_music % remove when inputting notes
 }
 
 notes_piano_lower_bookpart_one = \relative c' {
-  c
+  \no_music % remove when inputting notes
 }
 
 part_piano_bookpart_one = \new PianoStaff \with {

@@ -7,7 +7,8 @@
 \language "english"
 
 notes_cymbals_bookpart_one = \drummode {
-  cymc
+  \no_music % remove when inputting notes
+  % cymc
 }
 
 part_cymbals_bookpart_one = \new DrumStaff \with {
