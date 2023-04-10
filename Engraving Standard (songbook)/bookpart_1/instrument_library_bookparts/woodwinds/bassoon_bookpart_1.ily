@@ -14,7 +14,7 @@
 }
   
   % Optionally set staff size in \layout{}, depending on needs when dealing with multiple scores.
-    \score { \scoring_bassoon_bookpart_one \layout { %{ #(layout-set-staff-size 20) %} indent = 0\mm short-indent = 0\mm } \midi { \set Score.midiChannelMapping = #'instrument } }
+    \score { \scoring_bassoon_one_bookpart_one \layout { %{ #(layout-set-staff-size 20) %} indent = 0\mm short-indent = 0\mm } \midi { \set Score.midiChannelMapping = #'instrument } }
   
   % Articulated MIDI score block %
     % (Purposely creates no visual output) %
