@@ -28,12 +28,21 @@
   } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two >> }
 
   % Part Only Part Definition
-  part_horn_part = \new Staff \with {
-    midiInstrument = "french horn"
+    % Concert pitch
+    part_horn_part = \new Staff \with {
+      midiInstrument = "french horn"
 
-    % Set printPartCombineTexts to ##t when working with 2 parts
-    printPartCombineTexts = ##f  
-  } { \clef treble << \removeWithTag #'score \transpose f c' { \global } \removeWithTag #'score \transpose f c' { \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two } >> }
+      % Set printPartCombineTexts to ##t when working with 2 parts
+      printPartCombineTexts = ##f  
+    } { \clef treble << \removeWithTag #'score \transpose f c' { \global } \removeWithTag #'score \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two >> }
+
+    % Transposed for instrument
+    part_horn_part_transposed = \new Staff \with {
+      midiInstrument = "french horn"
+
+      % Set printPartCombineTexts to ##t when working with 2 parts
+      printPartCombineTexts = ##f  
+    } { \clef treble << \removeWithTag #'score \transpose f c' { \global } \removeWithTag #'score \transpose f c' { \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two } >> }
 
 % Scoring (for part only purposes)
   scoring_horn_part = {
@@ -41,3 +50,9 @@
       \part_horn_part
     >>
   }
+
+  scoring_horn_part_transposed = {
+  <<
+    \part_horn_part_transposed
+  >>
+}
