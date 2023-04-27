@@ -7,8 +7,13 @@
 \language "english"
 
 % Note input
-  notes_horn = \relative c' {
+  notes_horn_one = \relative c' {
     \no_music % remove when inputting notes
+  }
+
+  notes_horn_two = \relative c' {
+    % input notes here
+    % when working with a 2nd part, set printPartCombineTexts to ##t below
   }
 
 % Part definitions
@@ -17,12 +22,18 @@
     instrumentName = "Horn in F"
     shortInstrumentName = "Hn.F."
     midiInstrument = "french horn"
-  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \notes_horn >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two >> }
 
   % Part Only Part Definition
   part_horn_part = \new Staff \with {
     midiInstrument = "french horn"
-  } { \clef treble << \removeWithTag #'score \transpose f c' { \global } \removeWithTag #'score \transpose f c' { \notes_horn } >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'score \transpose f c' { \global } \removeWithTag #'score \transpose f c' { \partCombine #'(1 . 0) \notes_horn_one \notes_horn_two } >> }
 
 % Scoring (for part only purposes)
   scoring_horn_part = {

@@ -7,8 +7,13 @@
 \language "english"
 
 % Note input
-  notes_clarinet = \relative c' {
+  notes_clarinet_one = \relative c' {
     \no_music % remove when inputting notes
+  }
+
+  notes_clarinet_two = \relative c' {
+    % input notes here
+    % when working with a 2nd part, set printPartCombineTexts to ##t below
   }
 
 % Part definitions
@@ -17,12 +22,18 @@
     instrumentName = \markup \concat { "Clarinet in B" \super \flat }
     shortInstrumentName = \markup \concat { "Cl.B" \super { \flat } "."}
     midiInstrument = "clarinet"
-  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \notes_clarinet >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two >> }
 
   % Part Only Part Definition
   part_clarinet_part = \new Staff \with {
     midiInstrument = "clarinet"
-  } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \transpose bf c' { \notes_clarinet } >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \transpose bf c' { \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two } >> }
   
 % Scoring (for part only purposes)
   scoring_clarinet_part = {

@@ -8,7 +8,7 @@
 
 % Note input
   notes_soprano_metallophone = \relative c' {
-    \transposition c'
+    \transposition c''
     \no_music % remove when inputting notes
   }
 

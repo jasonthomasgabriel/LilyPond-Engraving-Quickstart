@@ -32,7 +32,7 @@
   \include "strings/book_violin_II.ily"
   \include "strings/book_viola.ily"
   \include "strings/book_violoncello.ily"
-  \include "strings/book_violoncello.ily"
+  \include "strings/book_contrabass.ily"
   
   % User Instruments
     % uncomment where appropriate for your purposes

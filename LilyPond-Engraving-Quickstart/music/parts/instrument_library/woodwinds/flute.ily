@@ -7,8 +7,13 @@
 \language "english"
 
 % Note input
-  notes_flute = \relative c' {
+  notes_flute_one = \relative c' {
     \no_music % remove when inputting notes
+  }
+
+  notes_flute_two = \relative c' {
+    % input notes here
+    % when working with a 2nd part, set printPartCombineTexts to ##t below
   }
 
 % Part definitions
@@ -17,12 +22,18 @@
     instrumentName = "Flute"
     shortInstrumentName = "Fl."
     midiInstrument = "flute"
-  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \notes_flute >> }
+    
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f
+  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \partCombine #'(1 . 0) \notes_flute_one \notes_flute_two >> }
 
   % Part Only Part Definition
   part_flute_part = \new Staff \with {
     midiInstrument = "flute"
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_flute >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \partCombine #'(1 . 0) \notes_flute_one \notes_flute_two >> }
   
 % Scoring (for part only purposes)
   scoring_flute_part = {

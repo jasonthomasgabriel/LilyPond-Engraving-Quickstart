@@ -8,7 +8,7 @@
 
 % Note input
   notes_glockenspiel = \relative c' {
-    \transposition c''
+    \transposition c'''
     \no_music % remove when inputting notes
 }
 

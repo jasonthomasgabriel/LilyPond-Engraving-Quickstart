@@ -8,6 +8,7 @@
 
 % Note input
   notes_guitar = \relative c' {
+    \transposition c
     \no_music % remove when inputting notes
   }
 
