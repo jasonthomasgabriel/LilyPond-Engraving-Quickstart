@@ -9,8 +9,9 @@
  %                                                              %
  %                                                              %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %%%%%%%% Created using Engraving Quickstart v4.0 %%%%%%%%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%% Created using Engraving Quickstart v4.0 %%%%%%%%%%%%
+ %% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \version "2.24.1"
 
