@@ -1,10 +1,6 @@
-%%%% ENGRAVING QUICKSTART
-%%%% new_song.ly
-%%%% version: 4.0
-%%%% Author: Jason Thomas Gabriel
-
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  % Project     :                                                %
+ % Owner       :                                                %
  % ------------------------------------------------------------ %
  % Start date  :                                                %
  % Last edit   :                                                %
@@ -13,10 +9,12 @@
  %                                                              %
  %                                                              %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%% Created using Engraving Quickstart v4.0 %%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \version "2.24.1"
 
-% Scores cannot be empty, this variable is a spacer for all unused parts.
+% Scores cannot be empty (when using partCombine), this variable is a spacer for all unused parts.
 % For quick testing of your setup, you could replace the spacer with some music in curly brackets.
 no_music = \skip 4
 
