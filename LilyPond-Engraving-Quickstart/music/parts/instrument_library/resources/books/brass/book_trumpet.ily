@@ -22,7 +22,12 @@
 
     % Score 
       % Optionally set staff size in \layout{}, depending on needs when dealing with multiple scores.
-      \score { \scoring_trumpet_part \layout { %{ #(layout-set-staff-size 20) %} } \midi { \set Score.midiChannelMapping = #'instrument } }
+      
+      % (Visual output only - transposed part)
+      \score { \scoring_trumpet_part_transposed \layout { %{ #(layout-set-staff-size 20) %} } }
+      
+      % (MIDI output only - concert pitch)
+      \score { \scoring_trumpet_part \midi { \set Score.midiChannelMapping = #'instrument } }
 
     % Articulated MIDI score block %
       % (Purposely creates no visual output) %
