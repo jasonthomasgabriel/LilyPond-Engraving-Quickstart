@@ -7,8 +7,13 @@
 \language "english"
 
 % Note input
-  notes_trumpet = \relative c' {
+  notes_trumpet_one = \relative c' {
     \no_music % remove when inputting notes
+  }
+
+  notes_trumpet_two = \relative c' {
+    % input notes here
+    % when working with a 2nd part, set printPartCombineTexts to ##t below
   }
 
 % Part definitions
@@ -17,12 +22,18 @@
     instrumentName = \markup \concat { "Trumpet in B" \super \flat }
     shortInstrumentName = \markup \concat { "Tr.B" \super { \flat } "." }
     midiInstrument = "trumpet"
-  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \notes_trumpet >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'part \global \removeWithTag #'part \partCombine #'(1 . 0) \notes_trumpet_one \notes_trumpet_two >> }
 
   % Part Only Part Definition
   part_trumpet_part = \new Staff \with {
     midiInstrument = "trumpet"
-  } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \transpose bf c' { \notes_trumpet } >> }
+
+    % Set printPartCombineTexts to ##t when working with 2 parts
+    printPartCombineTexts = ##f  
+  } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \transpose bf c' { \partCombine #'(1 . 0) \notes_trumpet_one \notes_trumpet_two } >> }
   
 % Scoring (for part only purposes)
   scoring_trumpet_part = {
