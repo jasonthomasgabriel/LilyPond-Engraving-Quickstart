@@ -29,7 +29,7 @@
   \context {
     \Voice
     \consists "Melody_engraver"
-  % \consists "Ambitus_engraver" %Out of curiousity, I sometimes use this to check what range I use per instrument.
+    % \consists "Ambitus_engraver" %Out of curiousity, I sometimes use this to check what range I use per instrument.
   }
 
   \context {
