@@ -5,6 +5,14 @@
 
 \version "2.24.1"
 
+% Staff size for parts
+  % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.24/Documentation/notation/setting-the-staff-size
+  % That said, size 16.8 is a nice starting point for parts
+    #(set-global-staff-size 16.8) 
+  
+  % House fonts need to be restated after changing the staff size
+    \include "../../../../../resources/housefonts.ily"
+
 % Include all books you wish to print here
   \include "woodwinds/book_piccolo.ily"
   \include "woodwinds/book_flute.ily"

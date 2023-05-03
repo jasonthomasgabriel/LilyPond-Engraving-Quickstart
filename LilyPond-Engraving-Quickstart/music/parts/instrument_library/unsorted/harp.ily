@@ -35,9 +35,11 @@
   part_harp_part = \new PianoStaff {
     <<
       \new Staff = "staff_harp_upper" \with {
+        \magnifyStaff #15/17
         midiInstrument = "orchestral harp"
       } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_harp_upper >> } 
       \new Staff = "staff_harp_lower" \with {
+        \magnifyStaff #15/17
         midiInstrument = "orchestral harp"
       } { \clef bass << \removeWithTag #'part \global \removeWithTag #'part \notes_harp_lower >> }
     >>

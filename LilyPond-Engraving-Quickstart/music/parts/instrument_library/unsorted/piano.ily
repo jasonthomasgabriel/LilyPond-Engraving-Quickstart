@@ -35,9 +35,11 @@
   part_piano_part = \new PianoStaff {
     <<
       \new Staff = "staff_piano_upper" \with {
+        \magnifyStaff #15/17
         midiInstrument = "acoustic grand"
       } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_piano_upper >> } 
       \new Staff = "staff_piano_lower" \with {
+        \magnifyStaff #15/17
         midiInstrument = "acoustic grand"
       } { \clef bass << \removeWithTag #'part \global \removeWithTag #'part \notes_piano_lower >> }
     >>
