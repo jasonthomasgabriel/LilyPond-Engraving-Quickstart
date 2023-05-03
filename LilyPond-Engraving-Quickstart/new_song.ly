@@ -9,7 +9,7 @@
  %                                                              %
  %                                                              %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%% Created using Engraving Quickstart v4.0 %%%%%%%%%%%%
+ %%%%%%% Created using LilyPond Engraving Quickstart v4.0 %%%%%%%
  %% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -18,6 +18,10 @@
 % Scores cannot be empty (when using partCombine), this variable is a spacer for all unused parts.
 % For quick testing of your setup, you could replace the spacer with some music in curly brackets.
 no_music = \skip 4
+
+% A short print reference for yourself
+% Only visible in print, when "statusline" is set to \draftversion or \publishedversion in headers
+fileversionreferencetracker = "ref: <your reference>"
 
 #(ly:set-option 'relative-includes #t)
 \include "articulate.ly"
@@ -31,9 +35,9 @@ no_music = \skip 4
   
   % Fonts
     % Staff size needs to be set, before changing the font
-    % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.19/Documentation/notation/setting-the-staff-size
-    % That said, size 15 is a nice starting point
-      #(set-global-staff-size 15)
+    % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.24/Documentation/notation/setting-the-staff-size
+    % That said, size 14 is a nice starting point
+      #(set-global-staff-size 14)
   
     % House fonts (disable when not available on your machine)
       \include "resources/housefonts.ily"
@@ -53,7 +57,12 @@ no_music = \skip 4
 
 % Books
   % Main book
-    \include "music/mainbook.ily"
+    \book {
+      % Optional cover page (uncomment if desired)
+        % \include "resources/coverpagebookpart.ily"
+      % Main book
+        \include "music/mainbookpart.ily"
+    }
     
   % Optional books for individual parts - when using the Instrument Library.
     % \include "music/parts/instrument_library/resources/books/bundle_books_instrument_library.ily"

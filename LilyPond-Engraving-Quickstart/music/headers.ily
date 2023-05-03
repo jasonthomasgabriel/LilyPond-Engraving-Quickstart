@@ -3,7 +3,7 @@
 %%%% version: 4.0
 %%%% Author: Jason Thomas Gabriel
 
-% draftline       = \draftline
+% statusline      = % \draftversion OR \publishedversion (or neither). This could help you keep track of many PDFs created before the final one.
 % productiontitle = "Production title (and/or logo)"
 % bigsongnumber   = \markup \bigsongnumbermarkup "1"
 % revision        = "REV#1 DD-MM-YY - description of changes"
@@ -19,7 +19,7 @@
 % piece           = ""
 % opus            = ""
 
-% copyright       = \markup {
+% tagline         = \markup {
 %                       \center-column {
 %                         \line {\upright "<year>"} %Ab urbe condita
 %                         \with-url "<link>"
@@ -27,7 +27,7 @@
 %                       }
 %                     }
 
-% tagline 		    = \markup { 
+% copyright 	   = \markup { 
 %                      \with-url #"<link to license>"
 %                      \line {
 %                        "<license short version> To view a copy of this license, click here." 

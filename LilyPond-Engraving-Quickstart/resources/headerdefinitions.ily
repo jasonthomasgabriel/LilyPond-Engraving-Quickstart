@@ -5,25 +5,48 @@
 
 \version "2.24.1"
 
-% Engraving Standard file version number. 
-ESF_version = "ESF v4.0"
-
-fileversionreferencetracker = "ref 0#0"
+% LilyPond Engraving Quickstart version number. 
+LEQ_version = "LEQ v4.0"
+ 
 currentDate = #(strftime "%H:%M:%S - %d-%m-%Y" (localtime (current-time)))
 lilypondVersion = #(lilypond-version)
 
+% Create a background color for a piece of text - found on LilyPond Snippet Library
+  % http://lsr.di.unimi.it/LSR/Item?u=1&id=969 - contributed by Klaus Blum
+  #(define-markup-command (on-color layout props color arg) (color? markup?)
+    (let* ((stencil (interpret-markup layout props arg))
+            (X-ext (ly:stencil-extent stencil X))
+            (Y-ext (ly:stencil-extent stencil Y)))
+
+      (ly:stencil-add 
+        (stencil-with-color
+          (ly:round-filled-box X-ext Y-ext 0)
+          color)
+        stencil)))
+
 % To keep the actual header clean, the markup for the draftline (which I guess is now two lines) is done here.
-draftline = \markup {
+draftversion = \markup {
   \column {
     \fill-line{
       {\null}
-      \combine
-      \with-color #red \filled-box #'(-1 . 11.6) #'(-0.6 . 1.3) #0.6
-      \with-color #white \concat { "DRAFT VERSION" }
+      \with-color #white \on-color #red \pad-markup #0.5 \concat { "DRAFT VERSION" }
     }
     \fill-line{
       {\null}
-      \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \ESF_version }
+      \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
+    }
+  }
+}
+
+publishedversion = \markup {
+  \column {
+    \fill-line{
+      {\null}
+      \with-color #white \on-color #darkgreen \pad-markup #0.5 \concat { "PUBLISHED VERSION" }
+    }
+    \fill-line{
+      {\null}
+      \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
     }
   }
 }
@@ -80,7 +103,7 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
       \fill-line {
         {\null}
         {\null}
-        \smaller \smaller \smaller \smaller \typewriter \bold \fromproperty #'header:draftline
+        \smaller \smaller \smaller \smaller \typewriter \bold \fromproperty #'header:statusline
       }
       \vspace #0.25
       \fill-line{
@@ -116,36 +139,6 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
         \fill-line {
           { \smaller \fromproperty #'header:meter }
           { \smaller \fromproperty #'header:arranger }
-        }
-      }
-      \fill-line { \italic \fromproperty #'header:bookdedication }
-      \vspace #0.1 % That's a little close, but I quite like the dedication to rest on the title very snugly.
-      \column {
-        \fill-line{
-          \huge \larger \larger \larger \larger \larger \bold \caps \fromproperty #'header:booktitle
-        }
-        \fill-line {
-          \bold \caps
-          \fromproperty #'header:booksubtitle
-        }
-        \vspace #-0.30
-        \fill-line {
-          \smaller \smaller \italic
-          \fromproperty #'header:booksubsubtitle
-        }
-        \fill-line {
-          \smaller \smaller \sans \italic
-          \fromproperty #'header:bookrevision
-        }
-        \vspace #0.75
-        \fill-line {
-          { \smaller \fromproperty #'header:bookpoet }
-          { \dash \caps \fromproperty #'header:bookinstrument }
-          { \smaller \fromproperty #'header:bookcomposer }
-        }
-        \fill-line {
-          { \smaller \fromproperty #'header:bookmeter }
-          { \smaller \fromproperty #'header:bookarranger }
         }
       }
     }
@@ -199,12 +192,13 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
   oddFooterMarkup = \markup {
     \column {
       \fill-line {
-        %% Copyright header field only on first page in each bookpart.
-        \if \on-first-page-of-part \smaller \smaller \italic \fromproperty #'header:copyright
+        %% Tagline header field only on first page in each bookpart.
+        \if \on-first-page-of-part \smaller \smaller \italic \fromproperty #'header:tagline
       }
+      \if \on-last-page \null
       \fill-line {
-        %% Tagline header field only on last page in the book.
-        \if \on-last-page \smaller \smaller \fromproperty #'header:tagline
+        %% Copyright header field only on last page in the book.
+        \if \on-last-page \smaller \smaller \fromproperty #'header:copyright
       }
     }
   }
