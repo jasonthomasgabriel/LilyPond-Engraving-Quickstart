@@ -1,10 +1,10 @@
-(readme still in the making - eventually...)
+> *(readme still in the making - eventually...)*
 
 # LilyPond Engraving Quickstart (LEQ)
 
 ## Goal
 
-The goal of this project is to speed up the process of making a score using LilyPond, by having almost all non-notational aspects covered and standardised out-of-the-box. 
+The goal of this project is to speed up the process of making a score using LilyPond, by having almost all non-notational aspects covered and standardised out-of-the-box.
 
 This Engraving Quickstart is mainly tailored to my own needs for styling and notation rules. Nonetheless, some or even all of this repository might be useful to you. Feel free to use as you like. (See `LICENSE.md`).
 
