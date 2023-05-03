@@ -25,7 +25,7 @@
   part_bassdrum_part = \new DrumStaff \with {
     midiInstrument = "orchestra kit"
     drumStyleTable = #percussion-style
-  } { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'score \global \removeWithTag #'score \notes_bassdrum >> }
+  } { \override Staff.StaffSymbol.line-count = #1 << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_bassdrum } >> }
   
 % Scoring (for part only purposes)
   scoring_bassdrum_part = {

@@ -23,7 +23,7 @@
   % Part Only Part Definition  
   part_guitar_part = \new Staff \with {
     midiInstrument = "acoustic guitar (nylon)"
-  } { \clef "treble_8" << \removeWithTag #'score \global \removeWithTag #'score \notes_guitar >> }
+  } { \clef "treble_8" << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_guitar } >> }
   
 % Scoring (for part only purposes)
   scoring_guitar_part = {

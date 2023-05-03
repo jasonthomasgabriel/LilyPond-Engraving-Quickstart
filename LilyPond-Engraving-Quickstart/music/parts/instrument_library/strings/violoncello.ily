@@ -22,7 +22,7 @@
   % Part Only Part Definition
   part_violoncello_part = \new Staff \with {
     midiInstrument = "string ensemble 1" %saving midi channels for preview purposes
-  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \notes_violoncello >> }
+  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_violoncello } >> }
   
 % Scoring (for part only purposes)
   scoring_violoncello_part = {

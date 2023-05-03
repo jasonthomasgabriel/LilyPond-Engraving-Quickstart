@@ -34,7 +34,7 @@
 
     % Set printPartCombineTexts to ##t when working with 2 parts
     printPartCombineTexts = ##f  
-  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \partCombine #'(1 . 0) \notes_trombone_one \notes_trombone_two >> }
+  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \partCombine #'(1 . 0) \notes_trombone_one \notes_trombone_two } >> }
   
 % Scoring (for part only purposes)
   scoring_trombone_part = {

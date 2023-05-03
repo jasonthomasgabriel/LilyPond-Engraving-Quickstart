@@ -23,7 +23,7 @@
   % Part Only Part Definition
   part_crotales_part = \new Staff \with {
     midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_crotales >> }
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_crotales } >> }
   
 % Scoring (for part only purposes)
   scoring_crotales_part = {

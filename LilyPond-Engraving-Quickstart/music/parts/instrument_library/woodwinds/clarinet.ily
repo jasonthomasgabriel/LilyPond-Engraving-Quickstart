@@ -34,7 +34,7 @@
 
       % Set printPartCombineTexts to ##t when working with 2 parts
       printPartCombineTexts = ##f  
-    } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two >> }
+    } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \compressMMRests { \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two } >> }
 
     % Transposed for instrument
     part_clarinet_part_transposed = \new Staff \with {
@@ -42,7 +42,7 @@
 
       % Set printPartCombineTexts to ##t when working with 2 parts
       printPartCombineTexts = ##f  
-    } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \transpose bf c' { \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two } >> }
+    } { \clef treble << \removeWithTag #'score \transpose bf c' { \global } \removeWithTag #'score \compressMMRests { \transpose bf c' { \partCombine #'(1 . 0) \notes_clarinet_one \notes_clarinet_two } } >> }
 
 
 % Scoring (for part only purposes)

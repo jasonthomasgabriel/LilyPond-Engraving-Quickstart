@@ -23,7 +23,7 @@
   % Part Only Part Definition
   part_glockenspiel_part = \new Staff \with {
     midiInstrument = "glockenspiel"
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_glockenspiel >> }
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_glockenspiel } >> }
   
 % Scoring (for part only purposes)
   scoring_glockenspiel_part = {

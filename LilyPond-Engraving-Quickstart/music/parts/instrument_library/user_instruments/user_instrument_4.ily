@@ -22,7 +22,7 @@
   % Part Only Part Definition  
   part_user_instrument_four_part = \new Staff \with {
     % midiInstrument = ""
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_user_instrument_four >> }
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_user_instrument_four } >> }
   
 % Scoring (for part only purposes)
   scoring_user_instrument_four_part = {
