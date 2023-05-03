@@ -1,4 +1,4 @@
-> *(readme still in the making - eventually...)*
+*(readme still in the making - eventually...)*
 
 # LilyPond Engraving Quickstart (LEQ)
 
