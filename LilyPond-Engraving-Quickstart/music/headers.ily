@@ -1,7 +1,7 @@
-%%%% ENGRAVING QUICKSTART
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
 %%%% music/headers.ily
-%%%% version: 4.0
-%%%% Author: Jason Thomas Gabriel
+%%%% -----------------------------------------------------------
+%%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
 % statusline      = % \draftversion OR \publishedversion (or neither). This could help you keep track of many PDFs created before the final one.
 % productiontitle = "Production title (and/or logo)"

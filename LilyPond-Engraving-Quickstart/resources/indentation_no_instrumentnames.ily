@@ -1,7 +1,7 @@
-%%%% ENGRAVING QUICKSTART
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
 %%%% resources/indentation_no_instrumentnames.ily
-%%%% version: 4.0
-%%%% Author: Jason Thomas Gabriel
+%%%% -----------------------------------------------------------
+%%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
 \version "2.24.1"
 

@@ -1,7 +1,7 @@
-%%%% ENGRAVING QUICKSTART
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
 %%%% music/parts/instrument_library/resources/books/strings/book_violin_II.ily
-%%%% version: 4.0
-%%%% Author: Jason Thomas Gabriel
+%%%% -----------------------------------------------------------
+%%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
 \version "2.24.1"
 
