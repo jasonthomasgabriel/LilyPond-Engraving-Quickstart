@@ -23,7 +23,7 @@
   % Part Only Part Definition
   part_soprano_metallophone_part = \new Staff \with {
     midiInstrument = "glockenspiel" %saving midi channels for preview purposes
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \notes_soprano_metallophone >> }
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_soprano_metallophone } >> }
   
 % Scoring (for part only purposes)
   scoring_soprano_metallophone_part = {

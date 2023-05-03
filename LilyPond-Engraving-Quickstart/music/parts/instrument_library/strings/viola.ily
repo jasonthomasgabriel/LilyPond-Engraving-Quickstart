@@ -22,7 +22,7 @@
   % Part Only Part Definition
   part_viola_part = \new Staff \with {
     midiInstrument = "string ensemble 1" %saving midi channels for preview purposes
-  } { \clef alto << \removeWithTag #'score \global \removeWithTag #'score \notes_viola >> }
+  } { \clef alto << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_viola } >> }
   
 % Scoring (for part only purposes)
   scoring_viola_part = {

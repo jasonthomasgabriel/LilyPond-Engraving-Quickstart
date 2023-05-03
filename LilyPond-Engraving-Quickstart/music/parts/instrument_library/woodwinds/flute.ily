@@ -33,7 +33,7 @@
 
     % Set printPartCombineTexts to ##t when working with 2 parts
     printPartCombineTexts = ##f
-  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \partCombine #'(1 . 0) \notes_flute_one \notes_flute_two >> }
+  } { \clef treble << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \partCombine #'(1 . 0) \notes_flute_one \notes_flute_two } >> }
   
 % Scoring (for part only purposes)
   scoring_flute_part = {

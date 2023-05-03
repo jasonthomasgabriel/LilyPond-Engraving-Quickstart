@@ -23,7 +23,7 @@
   % Part Only Part Definition
   part_contrabass_part = \new Staff \with {
     midiInstrument = "string ensemble 1" %saving midi channels for preview purposes
-  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \notes_contrabass >> }
+  } { \clef bass << \removeWithTag #'score \global \removeWithTag #'score \compressMMRests { \notes_contrabass } >> }
   
  % Scoring (for part only purposes)
   scoring_contrabass_part = {
