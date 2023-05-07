@@ -17,6 +17,8 @@
 % Scoring
   scoring = {
     <<
+      % Remember to remove line 21
+      \new ChordNames \no_music
       \part_default_part
     >>
   }
