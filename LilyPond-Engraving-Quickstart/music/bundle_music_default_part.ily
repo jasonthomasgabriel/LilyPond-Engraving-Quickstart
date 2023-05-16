@@ -17,7 +17,8 @@
 % Scoring
   scoring = {
     <<
-      % Remember to remove line 21
+      % Remember to remove line 21 and 22
+      \new FretBoards { \no_music }
       \new ChordNames \no_music
       \part_default_part
     >>
