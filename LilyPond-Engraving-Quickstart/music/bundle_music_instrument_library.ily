@@ -56,6 +56,8 @@
   \include "parts/instrument_library/user_instruments/user_instrument_8.ily"
   \include "parts/instrument_library/user_instruments/user_instrument_9.ily"
   \include "parts/instrument_library/user_instruments/user_instrument_10.ily"
+
+  \include "parts/instrument_library/other/chords.ily"
   
 % Scoring
   scoring = {
@@ -97,7 +99,12 @@
         \part_violoncello_score
         \part_contrabass_score
       >>
-  
+
+      % Other
+        % Place these where appropriate for your score 
+          % \part_chordMusic
+          % \part_chordMusic_fretboards
+
       % User Instruments
         % Place these where appropriate for your score 
           % \part_user_instrument_one_score
