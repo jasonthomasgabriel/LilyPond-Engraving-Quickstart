@@ -19,6 +19,7 @@
   \override Score.MetronomeMark.Y-offset = 4\mm
   \override Score.RehearsalMark.Y-offset = 4\mm
   \override Score.ChordName.font-family = #'serif
+  \override Score.LyricText.font-size = #-1
   
   \override Score.DynamicTextSpanner.font-size = #-0.5
   \override Score.TextSpanner.font-size = #-0.5
@@ -30,10 +31,5 @@
     \Voice
     \consists "Melody_engraver"
     % \consists "Ambitus_engraver" %Out of curiousity, I sometimes use this to check what range I use per instrument.
-  }
-
-  \context {
-    \Score
-    \override LyricText.font-size = #-1
   }
 }
