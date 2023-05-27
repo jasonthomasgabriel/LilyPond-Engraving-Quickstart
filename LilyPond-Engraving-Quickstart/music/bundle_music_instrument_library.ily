@@ -102,8 +102,8 @@
 
       % Other
         % Place these where appropriate for your score 
-          % \part_chordMusic_fretboards
           % \part_chordMusic
+          % \part_chordMusic_fretboards
 
       % User Instruments
         % Place these where appropriate for your score 
