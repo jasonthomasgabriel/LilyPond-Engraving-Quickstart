@@ -1,17 +1,16 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% music/parts/instrument_library/resources/books/bundle_books_instrument_library.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-\version "2.24.1"
+\version "2.25.9"
 
 % Staff size for parts
   % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.24/Documentation/notation/setting-the-staff-size
   % That said, size 16.8 is a nice starting point for parts
     #(set-global-staff-size 16.8) 
   
-  % House fonts need to be restated after changing the staff size
-    \include "../../../../../resources/housefonts.ily"
+  % Costom fonts no longer need to be restated after changing the staff size, yay!
 
 % Include all books you wish to print here
   \include "woodwinds/book_piccolo.ily"
