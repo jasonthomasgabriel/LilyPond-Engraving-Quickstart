@@ -1,4 +1,4 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% music/headers.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
@@ -28,11 +28,15 @@
 %                     }
 
 % copyright 	   = \markup { 
-%                      \with-url #"<link to license>"
-%                      \line {
-%                        "<license short version> To view a copy of this license, click here." 
-%                      }
-%                    }
+%                       \with-url #"<link to license>"
+%                       \line {
+%                         "<license short version> To view a copy of this license, click here." 
+%                       }
+%                     }
+
+% qrcode         = \markup { % will only show on (optional) cover page
+%                     \qr-code #20 "<url>" 
+%                 }
 
 % maintainer      = ""
 % maintainerEmail = ""
