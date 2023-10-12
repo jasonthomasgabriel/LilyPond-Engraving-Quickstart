@@ -1,9 +1,9 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% resources/headerderdefinitions_extension_coverpage.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-\version "2.24.1"
+\version "2.25.9"
 
 bookTitleMarkup = \markup {
   \column {
@@ -54,6 +54,10 @@ bookTitleMarkup = \markup {
 
 oddFooterMarkup = \markup {
   \column {
+    \fill-line {
+      \fromproperty #'header:qrcode
+    }
+    \vspace #1.5
     \fill-line {
       \abs-fontsize #7
       \fromproperty #'header:tagline
