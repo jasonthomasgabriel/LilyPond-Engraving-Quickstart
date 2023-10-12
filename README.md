@@ -1,6 +1,7 @@
 *(readme still in the making - eventually...)*
 
 # LilyPond Engraving Quickstart (LEQ)
+*(Made for Lilypond 2.24.1, see branches for different versions)*
 
 ## Goal
 
