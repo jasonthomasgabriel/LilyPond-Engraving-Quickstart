@@ -1,4 +1,4 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% resources/headers.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
@@ -6,7 +6,7 @@
 \version "2.24.1"
 
 % LilyPond Engraving Quickstart version number. 
-LEQ_version = "LEQ v4.0"
+LEQ_version = "LEQ v4.0.2"
  
 currentDate = #(strftime "%H:%M:%S - %d-%m-%Y" (localtime (current-time)))
 lilypondVersion = #(lilypond-version)
