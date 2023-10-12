@@ -1,14 +1,12 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% resources/housefonts.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-\version "2.24.1"
+\version "2.25.9"
 
-\paper  {
-  #(define fonts
-     (make-pango-font-tree "Source Serif Pro"
-       "Source Sans Pro"
-       "Source Code Pro"
-       (/ staff-height pt 20)))
+\paper {
+  property-defaults.fonts.serif = "Source Serif Pro"
+  property-defaults.fonts.sans = "Source Sans Pro"
+  property-defaults.fonts.typewriter = "Source Code Pro"
 }
