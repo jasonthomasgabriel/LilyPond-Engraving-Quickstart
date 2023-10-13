@@ -3,7 +3,7 @@
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-\version "2.24.1"
+\version "2.25.9"
 
 % LilyPond Engraving Quickstart version number. 
 LEQ_version = "LEQ v4.0.2"
@@ -72,6 +72,7 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
 % Headers upside of page %
 \paper {  
   % Scheme to make \caps available when using \fromproperty
+  % [13-10-23] In 2.25.9 it's no longer needed to make caps available in headers like this, however this workaround is still required to get dashes around capitalised text.
   % Adaptation on the following source: https://sourceforge.net/p/testlilyissues/issues/1482/ %
   #(define-markup-command (fromproperty layout props symbol)
      (symbol?)
