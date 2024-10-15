@@ -112,7 +112,7 @@
           % \part_chordMusic
           % \part_chordMusic_fretboards
 
-      % Other
+      % Voices
         % Place these where appropriate for your score 
           % \new StaffGroup = "voices" <<
           %   \part_soprano_score
