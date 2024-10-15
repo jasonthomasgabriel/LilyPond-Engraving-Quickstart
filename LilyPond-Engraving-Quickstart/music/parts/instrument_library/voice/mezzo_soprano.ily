@@ -37,6 +37,6 @@
   scoring_mezzo_soprano_part = {
     <<
       \part_mezzo_soprano_part
-      \lyrics_mezzo_soprano_part
+      \part_lyrics_mezzo_soprano
     >>
   }
