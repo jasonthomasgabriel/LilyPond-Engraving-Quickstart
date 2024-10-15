@@ -37,6 +37,6 @@
   scoring_bass_part = {
     <<
       \part_bass_part
-      \lyrics_bass_part
+      \part_lyrics_bass
     >>
   }
