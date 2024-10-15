@@ -8,5 +8,5 @@
 
 % Lyric input 
   lyrics_tenor = \lyricmode {
-    % insert lyrics here
+    \no_lyrics % remove when inputting lyrics
   }

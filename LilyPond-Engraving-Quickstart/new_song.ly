@@ -15,9 +15,10 @@
 
 \version "2.25.20"
 
-% Scores cannot be empty (when using partCombine), this variable is a spacer for all unused parts.
-% For quick testing of your setup, you could replace the spacer with some music in curly brackets.
+% Scores cannot be empty (when using partCombine), these variables are a spacer for all unused parts.
+% For quick testing of your setup, you could replace these spacers with some music or lyrics in curly brackets.
 no_music = \skip 4
+no_lyrics = \lyricmode {}
 
 % A short print reference for yourself
 % Only visible in print, when "statusline" is set to \draftversion or \publishedversion in headers (music/headers.ily)

@@ -11,7 +11,7 @@
 
 % Note input 
   notes_bass = \relative c' {
-    \dynamicUp % Position dynamics above the staff
+    \dynamicUp % position dynamics above the staff
     \no_music % remove when inputting notes
   }
 
