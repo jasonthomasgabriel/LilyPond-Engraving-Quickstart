@@ -37,6 +37,6 @@
   scoring_alto_part = {
     <<
       \part_alto_part
-      \lyrics_alto_part
+      \part_lyrics_alto
     >>
   }
