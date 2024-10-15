@@ -37,6 +37,6 @@
   scoring_baritone_part = {
     <<
       \part_baritone_part
-      \lyrics_baritone_part
+      \part_lyrics_baritone
     >>
   }
