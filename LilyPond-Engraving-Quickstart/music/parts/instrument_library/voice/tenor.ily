@@ -37,6 +37,6 @@
   scoring_tenor_part = {
     <<
       \part_tenor_part
-      \lyrics_tenor_part
+      \part_lyrics_tenor
     >>
   }
