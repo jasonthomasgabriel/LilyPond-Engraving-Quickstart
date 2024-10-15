@@ -39,6 +39,13 @@
   \include "parts/instrument_library/unsorted/harp.ily"
   \include "parts/instrument_library/unsorted/piano.ily"
   \include "parts/instrument_library/unsorted/guitar.ily"
+
+  \include "parts/instrument_library/voice/soprano.ily"
+  \include "parts/instrument_library/voice/mezzo_soprano.ily"
+  \include "parts/instrument_library/voice/alto.ily"
+  \include "parts/instrument_library/voice/tenor.ily"
+  \include "parts/instrument_library/voice/baritone.ily"
+  \include "parts/instrument_library/voice/bass.ily"
   
   \include "parts/instrument_library/strings/violin_I.ily"
   \include "parts/instrument_library/strings/violin_II.ily"
@@ -104,6 +111,23 @@
         % Place these where appropriate for your score 
           % \part_chordMusic
           % \part_chordMusic_fretboards
+
+      % Other
+        % Place these where appropriate for your score 
+          % \new StaffGroup = "voices" <<
+          %   \part_soprano_score
+          %   \part_lyrics_soprano
+          %   \part_mezzo_soprano_score
+          %   \part_lyrics_mezzo_soprano
+          %   \part_alto_score
+          %   \part_lyrics_alto
+          %   \part_tenor_score
+          %   \part_lyrics_tenor
+          %   \part_baritone_score
+          %   \part_lyrics_baritone
+          %   \part_bass_score
+          %   \part_lyrics_bass
+          % >>
 
       % User Instruments
         % Place these where appropriate for your score 
