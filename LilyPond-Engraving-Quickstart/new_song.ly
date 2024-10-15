@@ -35,8 +35,11 @@ fileversionreferencetracker = "ref: <your reference>"
   
   % Staff size
     % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.24/Documentation/notation/setting-the-staff-size
-    % That said, size 14 is a nice starting point
+    % Set staff size for main book score below. Size 14 is a nice starting point
       #(set-global-staff-size 14)
+      
+    % Set staff size for books of individual parts - when using the Instrument Library. Size 16.8 is a nice starting point
+      staffsize_parts = 16.8
   
   % Fonts
     % House fonts (disable when not available on your machine)

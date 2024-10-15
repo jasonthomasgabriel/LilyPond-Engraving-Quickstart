@@ -6,9 +6,8 @@
 \version "2.25.9"
 
 % Staff size for parts
-  % LilyPond Standard staff size = 20. See table with recommendations for various sizes: http://lilypond.org/doc/v2.24/Documentation/notation/setting-the-staff-size
-  % That said, size 16.8 is a nice starting point for parts
-    #(set-global-staff-size 16.8) 
+  % (defined in main ly file (new_song.ly))
+    #(set-global-staff-size staffsize_parts)
   
   % Costom fonts no longer need to be restated after changing the staff size, yay!
 
