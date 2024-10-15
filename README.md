@@ -1,7 +1,8 @@
 *(readme still in the making - eventually...)*
 
-# LilyPond Engraving Quickstart (LEQ)
-*Made for Lilypond 2.25.9, see branches for different versions. The main branch will always be ready for the latest stable release of Lilypond. (As 2.25.9 is an unstable version, only affected parts of LEQ are updated but the rest remains equal to main branch. When Lilypond 2.26.x comes out, the entirety of the LEQ will be scrutinised).*
+# LilyPond Engraving Quickstart (LEQ v4.0.2)
+
+*Made for Lilypond 2.25.20 or higher. (See branches for an older version of LEQ compatible with Lilypond 2.24.1).*
 
 ## Goal
 

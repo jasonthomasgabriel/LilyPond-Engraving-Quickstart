@@ -9,7 +9,7 @@
 \include "../../../../resources/notationrules_chords.ily"
 
 % Note input 
-  chordMusic = \relative c' {
+  chordMusic = \chordmode {
     \set majorSevenSymbol = \markup { "maj7" }
     \set additionalPitchPrefix = "add"
     \set chordNameExceptions = #chExceptions
