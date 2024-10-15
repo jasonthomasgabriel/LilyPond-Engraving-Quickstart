@@ -34,6 +34,13 @@
   \include "unsorted/book_harp.ily"
   \include "unsorted/book_piano.ily"
   \include "unsorted/book_guitar.ily"
+
+  \include "voice/book_soprano.ily"
+  \include "voice/book_mezzo_soprano.ily"
+  \include "voice/book_alto.ily"
+  \include "voice/book_tenor.ily"
+  \include "voice/book_baritone.ily"
+  \include "voice/book_bass.ily"
   
   \include "strings/book_violin_I.ily"
   \include "strings/book_violin_II.ily"
