@@ -67,6 +67,7 @@
   \include "parts/instrument_library/other/chords.ily"
   
 % Scoring
+% (comment or uncomment to your scoring desires)
   scoring = {
     <<
       \new StaffGroup = "woodwinds" <<
@@ -117,14 +118,19 @@
           % \new StaffGroup = "voices" <<
           %   \part_soprano_score
           %   \part_lyrics_soprano
+          
           %   \part_mezzo_soprano_score
           %   \part_lyrics_mezzo_soprano
+          
           %   \part_alto_score
           %   \part_lyrics_alto
+          
           %   \part_tenor_score
           %   \part_lyrics_tenor
+          
           %   \part_baritone_score
           %   \part_lyrics_baritone
+          
           %   \part_bass_score
           %   \part_lyrics_bass
           % >>
