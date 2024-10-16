@@ -1,9 +1,9 @@
-%%%% LILYPOND ENGRAVING QUICKSTART v4.0.1
+%%%% LILYPOND ENGRAVING QUICKSTART v4.0.2
 %%%% music/parts/instrument_library/other/chords_1.ily
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-\version "2.24.1"
+\version "2.25.20"
 \language "english"
 
 \include "../../../../resources/notationrules_chords.ily"
@@ -18,10 +18,10 @@
   }
 
 % Part definitions
-  part_chordMusic = \new ChordNames { 
+  part_chordMusic = \new ChordNames \with { midiMaximumVolume = 0 } { 
     \chordMusic
   }
   
-  part_chordMusic_fretboards = \new FretBoards { 
+  part_chordMusic_fretboards = \new FretBoards \with { midiMaximumVolume = 0 } { 
     \chordMusic
   }
