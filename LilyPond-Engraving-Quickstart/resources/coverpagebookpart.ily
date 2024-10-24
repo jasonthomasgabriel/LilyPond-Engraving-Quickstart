@@ -31,6 +31,11 @@
 
 % If a blank spage is required for pageturn optimalisation, uncomment below.
 % \bookpart {
+%   \paper {
+%     % Prevent coverpage from taking up a page number
+%     bookpart-level-page-numbering = ##t
+%   }
+%
 %   \header {
 %     tagline = "(Page left blank intentionally)"
 %   }
