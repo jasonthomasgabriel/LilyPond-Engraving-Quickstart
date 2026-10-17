@@ -6,7 +6,7 @@
 \version "2.25.9"
 
 % LilyPond Engraving Quickstart version number. 
-LEQ_version = "LEQ v4.0.2"
+LEQ_version = "LEQ v4.0.3"
  
 currentDate = #(strftime "%H:%M:%S - %d-%m-%Y" (localtime (current-time)))
 lilypondVersion = #(lilypond-version)
@@ -26,28 +26,16 @@ lilypondVersion = #(lilypond-version)
 
 % To keep the actual header clean, the markup for the draftline (which I guess is now two lines) is done here.
 draftversion = \markup {
-  \column {
-    \fill-line{
-      {\null}
-      \with-color #white \on-color #red \pad-markup #0.5 \concat { "DRAFT VERSION" }
-    }
-    \fill-line{
-      {\null}
-      \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
-    }
+  \right-column {
+    \with-color #white \on-color #red \pad-markup #0.5 \concat { "DRAFT VERSION" }
+    \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
   }
 }
 
 publishedversion = \markup {
-  \column {
-    \fill-line{
-      {\null}
-      \with-color #white \on-color #darkgreen \pad-markup #0.5 \concat { "PUBLISHED VERSION" }
-    }
-    \fill-line{
-      {\null}
-      \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
-    }
+  \right-column {
+    \with-color #white \on-color #darkgreen \pad-markup #0.5 \concat { "PUBLISHED VERSION" }
+    \concat \caps { \fileversionreferencetracker " / " \currentDate " / " \lilypondVersion " / "  \LEQ_version }
   }
 }
 
@@ -112,6 +100,13 @@ cueheadermarkup = #(define-markup-command (cueheadermarkup layout props arg)
         {\null}
         { \concat { \italic { \fromproperty #'header:productiontitle \hspace #1 } \fromproperty #'header:bigsongnumber }}
       }
+      \vspace #0.25
+      \line {
+        \override #'(line-width . 110)
+        \smaller
+        \italic \justify-field #'header:foreword
+      }
+      \vspace #0.75
       \fill-line { \italic \fromproperty #'header:dedication }
       \vspace #0.1 % That's a little close, but I quite like the dedication to rest on the title very snugly.
       \column {

@@ -9,7 +9,7 @@
  %                                                              %
  %                                                              %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%% Created using LilyPond Engraving Quickstart v4.0 %%%%%%%
+ %%%%%%% Created using LilyPond Engraving Quickstart v4.0.3 %%%%%%%
  %% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart %
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -27,7 +27,9 @@ fileversionreferencetracker = "ref: <your reference>"
 #(ly:set-option 'relative-includes #t)
 \include "articulate.ly"
 
-% Housestyle
+% Start here: edit this file for score-wide choices. The included files below hold reusable defaults.
+
+% House style
   % Header definitions (global headers for print are set in music/headers.ily)
     \include "resources/headerdefinitions.ily"
   
@@ -49,23 +51,36 @@ fileversionreferencetracker = "ref: <your reference>"
   % Notation rules
     \include "resources/notationrules.ily"
 
-% Musical includes 
-  % Functions and variables
+% Musical includes
+  % Shared functions and spacer values; normally leave these definitions in place.
     \include "music/functions_variables.ily"
 
-  % Music
-    % Choose between starting with an empty, nameless part (default) or the instrument library
+  % Shared key, meter, tempo, and other score-wide musical settings:
+    % Edit music/parts/global.ily.
+  % Enter notes in music/parts/default_part.ily or in the selected instrument files.
+
+  % Choose ONE music bundle: keep the blank part, or use the instrument library.
       \include "music/bundle_music_default_part.ily"
       % \include "music/bundle_music_instrument_library.ily"
+
+      % If using the instrument library, uncomment at most ONE preset below.
+      % A preset replaces the bundle's default orchestral scoring with an ensemble selection.
+      % Presets select the staves; enter each instrument's notes in its part file.
+      % \include "music/presets/string_quartet.ily"
+      % \include "music/presets/piano_trio.ily"
+      % \include "music/presets/woodwind_quintet.ily"
 
 % Books
   % Main book
     \book {
       % Optional cover page (uncomment if desired)
         % \include "resources/coverpagebookpart.ily"
-      % Main book
+      % Main score: metadata is in music/headers.ily; instrument notes are in the selected part file.
+      % Keep one main-book include enabled. Choose the second version to omit main-book MIDI.
         \include "music/mainbookpart.ily"
+        % \include "music/mainbookpart_no_midi.ily"
     }
     
-  % Optional books for individual parts - when using the Instrument Library.
+  % Optional individual-part books (instrument library only).
+  % Uncomment the bundle to print the part books; edit its include list to select which parts.
     % \include "music/parts/instrument_library/resources/books/bundle_books_instrument_library.ily"

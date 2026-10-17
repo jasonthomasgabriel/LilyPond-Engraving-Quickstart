@@ -6,7 +6,8 @@ In random order
 - [X] Big overhaul to adjust nomenclature and files/folders to the new use of \book rather than \bookpart
 - [x] Make the individual part prints be their own \book, so they can be sized to wish
     - [X] And give them a more helpful filename with \bookOutputSuffix
-- [ ] Add more frequently used instruments to the instrument library (and voices)
-- [ ] Make it easier to enable/disable midi output
+- [x] Add a frequently used instrument to the instrument library (E-flat alto saxophone)
+- [x] Make it easier to enable/disable MIDI output (select the main-book include in `new_song.ly`)
 
-- [ ] WRITE A MANUAL!!!!! (don't wait up)
+- [x] Write a first-score guide and add compilation smoke tests
+- [ ] Add further commonly used instruments and voice types

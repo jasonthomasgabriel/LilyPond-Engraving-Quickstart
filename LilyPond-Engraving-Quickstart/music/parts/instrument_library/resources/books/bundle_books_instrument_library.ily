@@ -17,6 +17,7 @@
   \include "woodwinds/book_oboe.ily"
   \include "woodwinds/book_clarinet.ily"
   \include "woodwinds/book_bassoon.ily"
+  \include "woodwinds/book_alto_saxophone.ily"
   
   \include "brass/book_horn.ily"
   \include "brass/book_trumpet.ily"

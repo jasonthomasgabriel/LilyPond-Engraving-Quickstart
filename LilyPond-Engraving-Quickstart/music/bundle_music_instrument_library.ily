@@ -23,6 +23,7 @@
   \include "parts/instrument_library/woodwinds/oboe.ily"
   \include "parts/instrument_library/woodwinds/clarinet.ily"
   \include "parts/instrument_library/woodwinds/bassoon.ily"
+  \include "parts/instrument_library/woodwinds/alto_saxophone.ily"
   
   \include "parts/instrument_library/brass/horn.ily"
   \include "parts/instrument_library/brass/trumpet.ily"
@@ -76,6 +77,7 @@
         \part_oboe_score
         \part_clarinet_score
         \part_bassoon_score
+        \part_alto_saxophone_score
       >>
       
       \new StaffGroup = "brass" <<
