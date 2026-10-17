@@ -37,13 +37,15 @@ Paper size, margins, and notation defaults are in `resources/`. Staff sizes are 
 
 ## Development check (optional)
 
-These optional checks are for LEQ development and maintenance, not part of the normal score-creation workflow.
+These optional checks are for LEQ development and maintenance, not part of the normal score-creation workflow. Run them from the repository root:
 
-- `tests/smoke-test.sh` checks template, preset, part-book, and header compilation.
-- `tests/workflow-smoke-test.sh` checks the default and instrument-library starter workflows with sample notes.
-- `tests/example-music-regression/run.sh` compiles representative real-music excerpts for manual engraving inspection. It uses a custom score assembly, so it is not an end-to-end workflow test.
+```sh
+./LilyPond-Engraving-Quickstart/tests/smoke-test.sh
+./LilyPond-Engraving-Quickstart/tests/workflow-smoke-test.sh
+./LilyPond-Engraving-Quickstart/tests/example-music-regression/run.sh
+```
 
-All checks require LilyPond 2.25.20 or newer. Generated PDFs and MIDI files are saved in Git-ignored output folders; inspect PDFs for visual issues.
+All checks require LilyPond 2.25.20 or newer. See [`tests/README.md`](LilyPond-Engraving-Quickstart/tests/README.md) for coverage, output locations, and notes about interpreting results.
 
 ## Examples
 
