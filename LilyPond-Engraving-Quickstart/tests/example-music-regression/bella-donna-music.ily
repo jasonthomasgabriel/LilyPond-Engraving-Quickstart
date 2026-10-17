@@ -26,6 +26,7 @@ bellaDonnaChords = \chordmode {
 }
 
 bellaDonnaSopranoExcerpt = \relative c' {
+  \dynamicUp % position dynamics above the staff
   e8 16 16 ~ 8 a16 16 ~ 8 e r8 cs16 d |
   e8 16 16 ~ 8 a16 16 4 r8. cs,16 |
   e8 16 16 ~ 8 16 16 8 r8 \tuplet 3/2 { r8 e a, } fs'4\mf \breathe fs8\tenuto\f gs\tenuto |
@@ -42,6 +43,8 @@ bellaDonnaSopranoLyrics = \lyricmode {
   kan ik nu weer te -- rug. Ik
   zal moet -- en ver -- ge -- ten wie ik ben. Bel -- la
   is niet meer, en kan niet meer, en
+  zal niet meer zijn wie ze
+  \markup { \italic "was." } Don -- na
 }
 
 bellaDonnaPianoUpperExcerpt = \relative c'' {
