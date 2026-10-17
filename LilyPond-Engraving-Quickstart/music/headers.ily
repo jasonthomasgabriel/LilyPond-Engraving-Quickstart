@@ -3,13 +3,14 @@
 %%%% -----------------------------------------------------------
 %%%% github.com/jasonthomasgabriel/LilyPond-Engraving-Quickstart
 
-% statusline      = % \draftversion OR \publishedversion (or neither). This could help you keep track of many PDFs created before the final one.
+% statusline      = \draftversion OR \publishedversion (or neither). This could help you keep track of many PDFs created before the final one.
 % productiontitle = "Production title (and/or logo)"
 % bigsongnumber   = \markup \bigsongnumbermarkup "1"
 % revision        = "REV#1 DD-MM-YY - description of changes"
+% foreword        = "An optional short description, foreword, or scene summary. Long text is wrapped and justified above the title."
 % cue             = \markup \cueheadermarkup ""
 % dedication      = ""
-% title           = ""
+% title           = "Test"
 % subtitle        = ""
 % subsubtitle     = ""
 % composer        = ""
